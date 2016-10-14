@@ -12,7 +12,7 @@ where B.设备id=1 and BJ.保养id=B.id保养 and S.保养记录id=BJ.id保养�
 GROUP BY S.材料配件id;
 `
 
-<div>![图1](images/1.PNG)</div>
+![图1](images/1.PNG)
 
 * 查询设备编号为1的历史检修情况
 
