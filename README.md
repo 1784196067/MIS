@@ -5,7 +5,7 @@
 
 ## ER图：
 
-        ![ER图](images/ER.PNG)
+![ER图](images/ER.PNG)
 
 ***
 
