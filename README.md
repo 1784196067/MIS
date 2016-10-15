@@ -62,7 +62,7 @@ from 设备 SB,检修类型 JX,(select B.设备id as id,max(BJ.保养日期) as 
 where T.id=SB.id设备 and JX.检修周期-DATEDIFF(now(),T.timee)<SB.提前预警天数;
 `
 
-![图5](images/5.PNG)
+![图5](images/5.JPG)
 
 
 
