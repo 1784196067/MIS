@@ -1,7 +1,3 @@
-## Axure
-[Axure百度云链接](https://pan.baidu.com/s/1i5LQpPb)
-
-***
 
 ## ER图：
 
@@ -62,7 +58,7 @@ where BX.设备类别id=B.设备类别id and B.设备id=1;
 `
 USE wkud;
 select SB.设备号
-from 设备 SB,检修类型 JX,(select B.设备id as id,max(BJ.保养日期) as timee from 保养记录 BJ,保养 B group by B.设备id) AS T
+from 设备 SB,检修类型 JX,(select B.设备id as id,max(BJ.保养日期) as timee from 保养记录 BJ,保养 B where BJ.保养id=B.id保养 group by B.设备id) AS T
 where T.id=SB.id设备 and JX.检修周期-DATEDIFF(now(),T.timee)<SB.提前预警天数;
 `
 
